@@ -1,0 +1,77 @@
+Parar escreve um teste é muito simples, voce vai chamar a função test
+e essa função vai receber  dois paramentros, Priemiro parametro é a descrição do teste
+E o segunfo parametro é a função onde voce vai programar o teste
+Exemplo:
+test("Deve cadastrar um usuario quando receber um e-mail X",() => {})
+
+
+
+Nomenclatura:
+de acordo com a comunidade segui sempre escrever o teste nesse estilo
+test("Deve cadastrar um usuario quando receber um e-mail X",() => {}) // usar o "Deve" para explicar o faz
+
+
+Alem, da função test o JEST tambem traz a função it() é a mesma coisa que a função test() a diferença que um é usado pra lingua
+inglesa (no caso it() para ter a tradução de "isso" e complementa com a descrição do teste ).
+
+Exemplo de aplicação
+
+let app = require("../app") <--- importar o arquivo que precisa
+test("Deve retornar o valor 10 ao somar 5 + 5",() => {
+    let resultado = app.soma(5,5)
+    expect(resultado).toEqual(10)
+})
+
+Apos feito o script do test
+
+vamos no nosso arquivo principal e escrevemos a função
+
+nele
+
+Exemplo:
+
+module.exports = {
+    soma: function(a,b){
+        return a + b
+    }
+}
+
+Feito isso, abra o terminal e rode o comando
+
+npm run test
+esse vai dar um resultado assim
+
+> jest
+-----------------------------------------------------------
+ PASS  test/calculadora.test.js
+  √ Deve retornar o valor 10 ao somar 5 + 5 (35 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        6.181 s
+Ran all test suites.
+-----------------------------------------------
+
+O codigo todo do test
+
+let app = require("../app")
+
+
+describe("Operações basicas",()=>{
+
+    test("Deve retornar o valor 10 ao somar 5 + 5",() => {
+        let resultado = app.soma(5,5)
+        expect(resultado).toEqual(10)
+    })
+    
+    test("Deve retornar o valor 10 ao multiplicar 2 por 5", () => {
+        let resultado = app.mult(2,5)
+        expect(resultado).toEqual(10)
+    })
+    
+})
+
+
+
+

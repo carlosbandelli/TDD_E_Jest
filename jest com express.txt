@@ -1,0 +1,13 @@
+Sempre que usar promise utilizar sempre na frente da promise usar return
+sem o return o jest nãi vai saber se o test passou ou não
+pq quando voce trabalha com promise o node meio que q tira o escopo
+daquele código do escopo do teste.
+
+Usar o supertest
+npm install supertest
+
+usar o Express
+npm install express
+
+toda vez que nos fomos rodar o teste automaticamente o supertest vai subir para uma instancia
+do express que estamos passando para ele e vai fazer tudo automaticamente

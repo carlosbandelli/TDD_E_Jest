@@ -1,0 +1,26 @@
+{
+  "name": "TDD_E_Jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosbandelli/TDD_E_Jest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosbandelli/TDD_E_Jest/issues"
+  },
+  "homepage": "https://github.com/carlosbandelli/TDD_E_Jest#readme",
+  "dependencies": {
+    "@types/jest": "^27.0.1",
+    "express": "^4.17.1",
+    "jest": "^27.0.6",
+    "supertest": "^6.1.6"
+  }
+}

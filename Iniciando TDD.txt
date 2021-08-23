@@ -1,0 +1,22 @@
+Para instalar todoas a bibliotecas localmente dentro do arquivo
+usar npm install
+
+Usando Jest
+Para que o jest funcione crie uma pasta na raiz do sei projeto chamada TEST
+
+
+Scripts
+entrar em package.json,
+O scripts são atalahos pois quando voce coloca
+
+ "scripts": {
+    "test": "jest" < -- jest aqui
+  }
+
+O node ja sabe que voce quer rodar o modulo chamado jest que está na pasta node_modules
+feito isso voce usa o comando no terminal
+
+npm run test <--- pois o teste ja chamr o jest
+
+Para resolver o problema de auto_complete do jest instalamos a biblioteca
+npm install @types/jest

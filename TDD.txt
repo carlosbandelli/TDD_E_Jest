@@ -1,0 +1,17 @@
+O que é TDD?
+TDD = Test Driven development
+Desenvolvimento orientado a teste
+Metodo logia de desenvolvimento, é forma de voce criar um projeto
+
+CDD ?
+code driven development
+Forma convencional que costumado a programar
+Fluxo do CDD
+Primeiro escreve o código apos escrever o código voce vai testar
+esse teste pode ser tanto um teste manual como um teste automazido
+
+TDD
+ANtes do código existir voce vai fazer.
+Meta no TDD: è escreve um código que faça seu teste passar, após isso vocÊ vai rodar
+a suites de testes e se o teste passar para a funcionalidade, deu certo.
+
